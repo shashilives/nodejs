@@ -75,6 +75,6 @@ app.get('/bad', (req, res) => {
 app.get('/maintenance', (req, res) => {
     res.render('maintenance');
 });
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server started on port ' + port);
 });
