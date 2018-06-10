@@ -51,10 +51,12 @@ app.get('/', (req, res) => {
     //         age: 28
     //     }
     // );'
-    res.render('home.hbs', {
-        title: "Home Page",
-        welcomeMsg: "Albert Einstein"
-    });
+    // res.render('home.hbs', {
+    //     title: "Home Page",
+    //     welcomeMsg: "Albert Einstein"
+    // });
+
+    res.render('resume.hbs');
 });
 
 
