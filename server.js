@@ -28,9 +28,10 @@ app.use((req, res, next) => {
 });
 
 // only this page will be renderd, nothing else will happen as next() is not called
-app.use((req, res, next) => {
-    res.render('maintenance');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance');
+
+// });
 //Middle ware    to serve public folder
 // app.use( '/static',express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
@@ -75,5 +76,5 @@ app.get('/maintenance', (req, res) => {
     res.render('maintenance');
 });
 app.listen(3000, () => {
-    console.log(`Server started on port ${port}`);
+    console.log('Server started on port ' + port);
 });
